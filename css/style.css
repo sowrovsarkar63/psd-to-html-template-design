@@ -3,6 +3,12 @@
 BESIC SETUP CSS   
 ======================================
 */
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400;1,700;1,900&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -16,20 +22,114 @@ BESIC SETUP CSS
 ul{
     margin: 0;padding: 0;list-style: none;  
 }
+a{
+    transition: .3s;
+}
 /* ==============================
-HEADER AREA 
+HEADER AREA +++++++++++++++++++++++
 =================================
 */
+.search-icon{
+    float: right;
+    margin-top: 50px;
+    margin-left: 25px;
+    padding-left: 25px;
+    position: relative;
+}
+.search-icon::before{
+   
+    position: absolute;
+    left: 0;
+    top: 1px;
+    height: 15px;
+    width: 1px;
+    background: #666666;
+    content: "";
+}
+.header-area{
+    border-top: 5px solid #4272D7;
+    min-height: 120px;
+}
+.logo{
+    float: left;
+    margin-top: 35px;
+}
 
 .main-menu{
 float: right;
+
 }
 .main-menu ul{
-
+   
 }
 .main-menu ul li {
+display: inline-block;
+margin-left: 40px;
+padding: 50px 0;
+position: relative;
 
+}
+/* .main-menu ul li :hover{
+color: #4272D7;
+} */
+.main-menu ul li:hover a >{
+    color: #4272D7;
 }
 .main-menu ul li a{
+ text-decoration: none;
+ font-size: 15px;
+ color: #666666;
 
 }
+/* Drop down menu  */
+.main-menu ul li .sub-menu{
+    position: absolute;
+    background: #171a21;
+    width: 260px;
+    top: 110%;
+    left: 0;
+    border-top:5px solid #4272d7 ;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+}
+.main-menu ul li:hover ul.sub-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.main-menu ul li .sub-menu li{
+    margin: 0;
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 2px solid #1e2128;
+    position: relative;
+   
+    
+}
+.main-menu ul li .sub-menu li a {
+    color: #fff; 
+    font-size: 13px;
+    text-decoration: none;
+}
+.main-menu ul li .sub-menu li:hover{
+    background: #4272D7;
+    transition: .5s;
+}
+.main-menu ul li .sub-menu li:hover ul.sub-menu{
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}
+.main-menu ul li .sub-menu li ul.sub-menu{
+    left: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    }
+/* .main-menu ul li .sub-menu li ul.sub-menu li{}
+.main-menu ul li .sub-menu li ul.sub-menu li a{} */
+/* END HEADER AREA HERE  */
