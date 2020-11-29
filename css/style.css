@@ -1,0 +1,35 @@
+/* 
+======================================
+BESIC SETUP CSS   
+======================================
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+ul{
+    margin: 0;padding: 0;list-style: none;  
+}
+/* ==============================
+HEADER AREA 
+=================================
+*/
+
+.main-menu{
+float: right;
+}
+.main-menu ul{
+
+}
+.main-menu ul li {
+
+}
+.main-menu ul li a{
+
+}
